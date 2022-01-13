@@ -1,0 +1,116 @@
+/* Start Variabls */
+:root {
+    --first-color: hsl(31, 77%, 52%);
+    --second-color: hsl(184, 100%, 22%);
+    --third-color: hsl(179, 100%, 13%);
+    --h-color: hsl(0, 0%, 95%);
+    --p-color: hsla(0, 0%, 100%, 0.75);
+    --p-family: 'Lexend Deca', sans-serif;
+    --h-family: 'Big Shoulders Display', cursive;
+}
+
+/* End Variabls */
+
+/* Start Basics */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+}
+
+/* End Basics */
+
+.cards {
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.cards .one {
+    background-color: var(--first-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cards .two {
+    background-color: var(--second-color);
+}
+
+.cards .three {
+    background-color: var(--third-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cards .card {
+    padding: 50px 40px 40px;
+}
+
+.cards .card img {
+    width: 60px;
+}
+
+.cards .card h1 {
+    text-transform: uppercase;
+    font-family: var(--h-family);
+    font-size: 35px;
+    color: var(--h-color);
+}
+
+.cards .card p {
+    color: var(--p-color);
+    margin-bottom: 150px;
+    font-family: var(--p-family);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.cards .card a {
+    position: relative;
+    top: -25px;
+    padding: 15px 30px;
+    margin-top: -10px;
+    background-color: white;
+    font-family: var(--p-family);
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 50px;
+    transition: .3s;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.cards .card a:hover {
+    background-color: transparent;
+    color: var(--p-color);
+}
+
+.cards .one a {
+    color: var(--first-color);
+}
+
+.cards .two a {
+    color: var(--second-color);
+}
+
+.cards .three a {
+    color: var(--third-color);
+}
